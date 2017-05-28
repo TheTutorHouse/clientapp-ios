@@ -12,6 +12,8 @@
 		310954281EDB597700DF19C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310954261EDB597700DF19C8 /* Main.storyboard */; };
 		3109542A1EDB597700DF19C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310954291EDB597700DF19C8 /* Assets.xcassets */; };
 		3109542D1EDB597700DF19C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3109542B1EDB597700DF19C8 /* LaunchScreen.storyboard */; };
+		310954351EDB5A5300DF19C8 /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310954341EDB5A5300DF19C8 /* CustomUI.swift */; };
+		310954371EDB5C3100DF19C8 /* CustomColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310954361EDB5C3100DF19C8 /* CustomColorScheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		310954291EDB597700DF19C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3109542C1EDB597700DF19C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3109542E1EDB597700DF19C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		310954341EDB5A5300DF19C8 /* CustomUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUI.swift; sourceTree = "<group>"; };
+		310954361EDB5C3100DF19C8 /* CustomColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColorScheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				310954291EDB597700DF19C8 /* Assets.xcassets */,
 				3109542B1EDB597700DF19C8 /* LaunchScreen.storyboard */,
 				3109542E1EDB597700DF19C8 /* Info.plist */,
+				310954341EDB5A5300DF19C8 /* CustomUI.swift */,
+				310954361EDB5C3100DF19C8 /* CustomColorScheme.swift */,
 			);
 			path = clientapp;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				310954251EDB597700DF19C8 /* ViewController.swift in Sources */,
+				310954371EDB5C3100DF19C8 /* CustomColorScheme.swift in Sources */,
+				310954351EDB5A5300DF19C8 /* CustomUI.swift in Sources */,
 				310954231EDB597700DF19C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +271,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8CGNLEGE5T;
 				INFOPLIST_FILE = clientapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tutorhouse.clientapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8CGNLEGE5T;
 				INFOPLIST_FILE = clientapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tutorhouse.clientapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
