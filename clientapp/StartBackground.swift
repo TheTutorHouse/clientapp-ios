@@ -14,8 +14,11 @@ class StartBackground: UIElement{
         super.init(withView: imageView, parent: parent)
     }
     
+    override func initializeProperties() {
+        self.view.contentMode = .redraw
+    }
+    
     override func initializeSize() {
         self.view.frame = parent.frame
-        self.view.sizeToFit()
     }
 }

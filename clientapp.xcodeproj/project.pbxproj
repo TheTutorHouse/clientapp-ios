@@ -15,6 +15,7 @@
 		310954351EDB5A5300DF19C8 /* CustomUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310954341EDB5A5300DF19C8 /* CustomUI.swift */; };
 		310954371EDB5C3100DF19C8 /* CustomColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310954361EDB5C3100DF19C8 /* CustomColorScheme.swift */; };
 		3109543B1EDB6B2600DF19C8 /* StartBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3109543A1EDB6B2600DF19C8 /* StartBackground.swift */; };
+		312AC74B1EE0776400F9C6BA /* UIGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312AC74A1EE0776400F9C6BA /* UIGroup.swift */; };
 		31885ABF1EDD882200F8487B /* UIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31885ABE1EDD882200F8487B /* UIElement.swift */; };
 		31F024E51EDC84FD00F85BBB /* StartLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F024E41EDC84FD00F85BBB /* StartLogo.swift */; };
 		31F024E81EDC867A00F85BBB /* SizingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F024E71EDC867A00F85BBB /* SizingEngine.swift */; };
@@ -31,6 +32,7 @@
 		310954341EDB5A5300DF19C8 /* CustomUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUI.swift; sourceTree = "<group>"; };
 		310954361EDB5C3100DF19C8 /* CustomColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomColorScheme.swift; path = "Custom Properties/CustomColorScheme.swift"; sourceTree = "<group>"; };
 		3109543A1EDB6B2600DF19C8 /* StartBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartBackground.swift; sourceTree = "<group>"; };
+		312AC74A1EE0776400F9C6BA /* UIGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGroup.swift; sourceTree = "<group>"; };
 		31885ABE1EDD882200F8487B /* UIElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIElement.swift; sourceTree = "<group>"; };
 		31F024E41EDC84FD00F85BBB /* StartLogo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartLogo.swift; sourceTree = "<group>"; };
 		31F024E71EDC867A00F85BBB /* SizingEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizingEngine.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				31885ABE1EDD882200F8487B /* UIElement.swift */,
+				312AC74A1EE0776400F9C6BA /* UIGroup.swift */,
 				31F024E71EDC867A00F85BBB /* SizingEngine.swift */,
 			);
 			name = CustomUIComponents;
@@ -202,6 +205,7 @@
 				310954371EDB5C3100DF19C8 /* CustomColorScheme.swift in Sources */,
 				310954351EDB5A5300DF19C8 /* CustomUI.swift in Sources */,
 				310954231EDB597700DF19C8 /* AppDelegate.swift in Sources */,
+				312AC74B1EE0776400F9C6BA /* UIGroup.swift in Sources */,
 				31F024E51EDC84FD00F85BBB /* StartLogo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

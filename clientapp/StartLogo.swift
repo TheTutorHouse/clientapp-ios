@@ -8,6 +8,24 @@
 
 import UIKit
 
+class StartLogo: UIGroup{
+    let title: StartLogoTitle!
+    let image: StartLogoImage!
+    
+    init(parent: UIView){
+        title = StartLogoTitle(parent: parent)
+        image = StartLogoImage(parent: parent)
+        super.init()
+    }
+    
+    override func layoutContent() {
+        self.stackViews(topView: image.view, bottomView: title.view, byAmount: 22.5, pinnedView: .bottom)
+    }
+    
+}
+
+
+
 class StartLogoTitle: UIElement{
     
     init(parent: UIView){
@@ -15,12 +33,15 @@ class StartLogoTitle: UIElement{
         super.init(withView: imageView, parent: parent)
     }
     
+    override func initializeProperties() {
+        self.view.contentMode = .redraw
+    }
+    
     override func initializeSize() {
-        self.view.sizeToFit()
-        //self.resizeView(minAmount: 265, maxAmount: 280, dynamicFactor: 0.736)
-        print(self.view.frame.size)
+        self.intelligentlyResize(minAmount: 265, maxAmount: 285, dynamicFactor: 0.74)
     }
 }
+
 
 class StartLogoImage: UIElement{
     init(parent: UIView){
@@ -28,8 +49,12 @@ class StartLogoImage: UIElement{
         super.init(withView: imageView, parent: parent)
     }
     
+    override func initializeProperties() {
+        self.view.contentMode = .redraw
+    }
+    
     override func initializeSize() {
-        self.view.sizeToFit()
+        self.intelligentlyResize(minAmount: 85, maxAmount: 96, dynamicFactor: 0.25)
     }
 }
 

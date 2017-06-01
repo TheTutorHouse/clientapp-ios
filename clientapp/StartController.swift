@@ -10,9 +10,7 @@ import UIKit
 
 class StartController: UIViewController {
     var background: StartBackground!
-    var logoTitle: StartLogoTitle!
-    var logoImage: StartLogoImage!
-    
+    var logo: StartLogo!
 
     override func viewDidLoad() {
         CustomUI.initialize()
@@ -22,8 +20,7 @@ class StartController: UIViewController {
     
     func layoutSubview(){
         self.background = StartBackground(parent: view)
-        self.logoTitle = StartLogoTitle(parent: background.view)
-        self.logoImage = StartLogoImage(parent: background.view)
+        self.logo = StartLogo(parent: background.view)
     }
 
 }

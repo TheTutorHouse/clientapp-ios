@@ -20,8 +20,13 @@ class UIElement{
     }
     
     func initializeLayout(){
+        self.initializeProperties()
         self.initializeSize()
         self.initializePosition()
+    }
+    
+    func initializeProperties(){
+        
     }
     
     func initializePosition(){
