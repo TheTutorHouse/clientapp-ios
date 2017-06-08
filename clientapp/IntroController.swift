@@ -14,7 +14,6 @@ class IntroController: UIViewController {
     var image: IntroImage!
 
     override func viewDidLoad() {
-        CustomUI.initialize()
         super.viewDidLoad()
         self.layoutSubviews()
         self.initPositions()
