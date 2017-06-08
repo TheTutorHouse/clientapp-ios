@@ -8,17 +8,15 @@
 
 import UIKit
 
-class StartBackground: UIElement{
+class IntroBackground: UIElement{
     init(parent: UIView) {
-        let imageView = UIImageView.init(image: #imageLiteral(resourceName: "RedBackground"))
+        let imageView = UIImageView.init(image: #imageLiteral(resourceName: "LightRedBackground"))
         super.init(withView: imageView, parent: parent)
     }
     
-    override func initializeProperties() {
-        self.view.contentMode = .redraw
-    }
-    
-    override func initializeSize() {
+    override func initialize() {
         self.view.frame = parent.frame
+        self.view.contentMode = .redraw
+        self.view.isUserInteractionEnabled = true
     }
 }

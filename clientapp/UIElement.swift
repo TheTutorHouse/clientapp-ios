@@ -16,23 +16,15 @@ class UIElement{
         self.view = view
         self.parent = parent
         parent.addSubview(view)
-        self.initializeLayout()
+        initialize()
+        initSizing()
     }
     
-    func initializeLayout(){
-        self.initializeProperties()
-        self.initializeSize()
-        self.initializePosition()
-    }
-    
-    func initializeProperties(){
+    internal func initialize(){
         
     }
     
-    func initializePosition(){
+    internal func initSizing(){
         self.view.center = parent.center
-    }
-    
-    func initializeSize(){
     }
 }

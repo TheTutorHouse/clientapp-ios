@@ -17,6 +17,6 @@ struct CustomUI{
     }
     
     static func initialize(){
-        statusBarColor = CustomColorScheme.grey1
+        statusBarColor = UIColor(red: 250/255, green: 101/255, blue: 98/255, alpha: 1)
     }
 }

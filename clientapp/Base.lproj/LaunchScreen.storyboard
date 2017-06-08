@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,20 +21,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="RedBackground" translatesAutoresizingMaskIntoConstraints="NO" id="pDm-wS-x0B" userLabel="Background">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LightRedBackground" translatesAutoresizingMaskIntoConstraints="NO" id="P5S-Bm-n4L">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="pDm-wS-x0B" secondAttribute="bottom" id="7Ww-t7-ueJ"/>
-                            <constraint firstItem="pDm-wS-x0B" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="B4Y-xV-vdB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pDm-wS-x0B" secondAttribute="trailing" id="C2T-ah-LRK"/>
-                            <constraint firstItem="pDm-wS-x0B" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Pqt-S9-pgG"/>
-                            <constraint firstAttribute="trailing" secondItem="pDm-wS-x0B" secondAttribute="trailing" id="aQu-Db-sQQ"/>
-                            <constraint firstItem="pDm-wS-x0B" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="c4l-Ag-Da4"/>
-                            <constraint firstItem="pDm-wS-x0B" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="d0H-yB-htg"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="pDm-wS-x0B" secondAttribute="bottom" id="vO3-s8-SD6"/>
+                            <constraint firstAttribute="trailing" secondItem="P5S-Bm-n4L" secondAttribute="trailing" id="j9N-Gy-7nG"/>
+                            <constraint firstItem="P5S-Bm-n4L" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="jxP-eS-mFb"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="P5S-Bm-n4L" secondAttribute="bottom" id="lVu-Uo-UWM"/>
+                            <constraint firstItem="P5S-Bm-n4L" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="xVe-4w-ON9"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -45,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="RedBackground" width="413" height="736"/>
+        <image name="LightRedBackground" width="414" height="736"/>
     </resources>
 </document>
