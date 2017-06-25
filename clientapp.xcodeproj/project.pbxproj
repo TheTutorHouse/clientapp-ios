@@ -24,6 +24,8 @@
 		3129C0681EE8D7F800E0C52C /* SurveyCard1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129C0671EE8D7F800E0C52C /* SurveyCard1.swift */; };
 		3129C06A1EE8D8E700E0C52C /* UITextFieldElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129C0691EE8D8E700E0C52C /* UITextFieldElement.swift */; };
 		312AC74B1EE0776400F9C6BA /* UIGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312AC74A1EE0776400F9C6BA /* UIGroup.swift */; };
+		312EE7C21F003405002184E7 /* DisplayTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312EE7C11F003405002184E7 /* DisplayTester.swift */; };
+		312EE7C41F00484D002184E7 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312EE7C31F00484D002184E7 /* StudentInformation.swift */; };
 		31885ABF1EDD882200F8487B /* UIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31885ABE1EDD882200F8487B /* UIElement.swift */; };
 		31D91B3C1EE4B30E00FF5C7D /* PixelColorIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D91B3B1EE4B30D00FF5C7D /* PixelColorIdentifier.swift */; };
 		31D91B3E1EE4B57900FF5C7D /* IntroCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D91B3D1EE4B57900FF5C7D /* IntroCard.swift */; };
@@ -56,6 +58,8 @@
 		3129C0671EE8D7F800E0C52C /* SurveyCard1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyCard1.swift; sourceTree = "<group>"; };
 		3129C0691EE8D8E700E0C52C /* UITextFieldElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldElement.swift; sourceTree = "<group>"; };
 		312AC74A1EE0776400F9C6BA /* UIGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGroup.swift; sourceTree = "<group>"; };
+		312EE7C11F003405002184E7 /* DisplayTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayTester.swift; sourceTree = "<group>"; };
+		312EE7C31F00484D002184E7 /* StudentInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInformation.swift; sourceTree = "<group>"; };
 		31885ABE1EDD882200F8487B /* UIElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIElement.swift; sourceTree = "<group>"; };
 		31D91B3B1EE4B30D00FF5C7D /* PixelColorIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelColorIdentifier.swift; sourceTree = "<group>"; };
 		31D91B3D1EE4B57900FF5C7D /* IntroCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroCard.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				310954241EDB597700DF19C8 /* IntroController.swift */,
+				311695661EE6DD6F00E696D5 /* IntroImage.swift */,
 				31E2F0F71EDB6CA300DE09C1 /* Components */,
 			);
 			name = "Start Screen";
@@ -133,6 +138,7 @@
 		311695681EE6EE3800E696D5 /* Survey Screens */ = {
 			isa = PBXGroup;
 			children = (
+				312EE7C31F00484D002184E7 /* StudentInformation.swift */,
 				311695691EE6EE4300E696D5 /* Student Information Screen */,
 			);
 			name = "Survey Screens";
@@ -196,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				3109543A1EDB6B2600DF19C8 /* IntroBackground.swift */,
-				311695661EE6DD6F00E696D5 /* IntroImage.swift */,
 				31D91B3D1EE4B57900FF5C7D /* IntroCard.swift */,
 				31D91B3F1EE4B60400FF5C7D /* Card Components */,
 			);
@@ -206,6 +211,7 @@
 		31F024E61EDC864A00F85BBB /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				312EE7C11F003405002184E7 /* DisplayTester.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -293,9 +299,11 @@
 				3109543B1EDB6B2600DF19C8 /* IntroBackground.swift in Sources */,
 				3129C0641EE815A000E0C52C /* SurveyScreen1ScrollView.swift in Sources */,
 				3129C0601EE75CFB00E0C52C /* SurveyScreen1Background.swift in Sources */,
+				312EE7C41F00484D002184E7 /* StudentInformation.swift in Sources */,
 				310954371EDB5C3100DF19C8 /* CustomColorScheme.swift in Sources */,
 				31D91B3E1EE4B57900FF5C7D /* IntroCard.swift in Sources */,
 				31D91B4D1EE4BF7D00FF5C7D /* IntroCardDescription.swift in Sources */,
+				312EE7C21F003405002184E7 /* DisplayTester.swift in Sources */,
 				3129C0621EE75F0300E0C52C /* SurveyScreen1TopBar.swift in Sources */,
 				31D91B431EE4B7C300FF5C7D /* IntroCardTitle.swift in Sources */,
 				310954231EDB597700DF19C8 /* AppDelegate.swift in Sources */,

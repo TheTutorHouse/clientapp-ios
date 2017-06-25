@@ -9,51 +9,53 @@
 import UIKit
 
 class IntroController: UIViewController {
-    var background: IntroBackground!
-    var card: IntroCard!
-    var image: IntroImage!
-
+    
+    @IBOutlet weak var image: IntroImage!
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var card: UIView!
+    @IBOutlet weak var cardBottom: NSLayoutConstraint!
+    var cardExtension: UIView!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.layoutSubviews()
-        self.initPositions()
-    }
-    
-    func layoutSubviews(){
-        self.background = IntroBackground(parent: view)
-        self.image = IntroImage(parent: background.view)
-        self.card = IntroCard(parent: background.view)
-        self.card.button.button.addTarget(self, action: #selector(onStartButtonClick), for: .touchUpInside)
-    }
-    
-    func initPositions(){
-        let availableImportantRegionSpace = card.background.view.frame.minY - 20
-        if (self.image.importantRegionHeight + 25) > availableImportantRegionSpace{
-            image.sizeImportantRegionTo(newImportantRegionHeight: availableImportantRegionSpace * 0.9)
-        }
+        self.button.setBackgroundImage(#imageLiteral(resourceName: "ButtonBackgroundHighlighted"), for: .highlighted)
         
-        self.image.importantRegionCenterPoint = CGPoint(x: self.view.center.x, y: (self.card.background.view.frame.minY + 10)/2)
+        cardExtension = UIView(frame: CGRect.init(x: 0, y: view.frame.maxY, width: view.bounds.width, height: self.view.bounds.height * 1.25))
+        cardExtension.backgroundColor = card.backgroundColor
+        view.addSubview(cardExtension)
+        
+        super.viewDidLoad()
     }
     
-    func onStartButtonClick(){
-        self.animateSubviews()
+    override func viewDidLayoutSubviews() {
+        self.updateImageLayout()
+        super.viewDidLayoutSubviews()
     }
     
-    func animateSubviews(){
-        UIView.animate(withDuration: 1.4, delay: 0.05, usingSpringWithDamping: 1, initialSpringVelocity: 0.4, options: [], animations: {
-            self.card.background.view.center.y -= (self.view.frame.height)
-            self.card.button.view.center.y -= (self.view.frame.height)
-            self.card.title.view.center.y -= (self.view.frame.height)
-            self.card.description.view.center.y -= self.view.frame.height
-        }, completion: { finished in
-            self.switchToSurveyController()
+    private func updateImageLayout(){
+        //Basic setup
+        image.translatesAutoresizingMaskIntoConstraints = true
+        image.sizeToFit()
+        
+        //Size and position properly
+        let availableSpace = CGSize(width: view.bounds.width, height: (card.frame.minY - 20))
+        if image.criticalSize.height > availableSpace.height{
+            image.sizeProportionallyByHeight(height: availableSpace.height)
+            image.centerImageTo(point: CGPoint(x: view.center.x, y: card.frame.minY/2))
+        }
+        else{
+            image.centerImageTo(point: CGPoint(x: view.center.x, y: card.frame.minY/2 - availableSpace.height * 0.06))
+        }
+    }
+
+    @IBAction func onClick(_ sender: UIButton) {
+        cardBottom.constant += self.view.bounds.height * 1.25
+        UIView.animate(withDuration: 1, animations: {
+            self.view.layoutIfNeeded()
+            self.cardExtension.center.y -= self.view.bounds.height * 1.25
+        }, completion:{ (finished: Bool) in
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "StudentInfo")
+            UIApplication.shared.delegate?.window??.rootViewController = nextVC
         })
     }
-    
-    func switchToSurveyController(){
-        let studentInformationVC = SurveyScreen1(nibName: nil, bundle: nil)
-        self.present(studentInformationVC, animated: false, completion: nil)
-    }
-    
 }
 

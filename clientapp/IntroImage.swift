@@ -8,41 +8,26 @@
 
 import UIKit
 
-class IntroImage: UIElement{
-    var importantRegionHeight: CGFloat = 0
-    var importantRegionCenterPoint: CGPoint = CGPoint.zero{
-        didSet{
-            setImportantRegionCenterTo(point: importantRegionCenterPoint)
+class IntroImage: UIImageView{
+    var criticalSize: CGSize{
+        get{
+            let width = self.bounds.width * 220/781
+            let height = self.bounds.height * 210/520
+            return CGSize(width: width, height: height)
         }
     }
     
-    init(parent: UIView){
-        let view = UIImageView(image: #imageLiteral(resourceName: "IntroScreenImage"))
-        super.init(withView: view, parent: parent)
+    func centerImageTo(point: CGPoint){
+        let point = CGPoint(x: point.x, y: (point.y + (112/520 * self.bounds.height)))
+        self.center = point
     }
     
-    override func initialize() {
-        self.view.sizeToFit()
-        super.initialize()
-    }
-    
-    override func initSizing() {
-        importantRegionHeight = 0.3686836028 * (self.view.frame.height)
-        super.initSizing()
-    }
-    
-    private func setImportantRegionCenterTo(point centerPoint: CGPoint){
-        let importantRegionCenterX = 135/434 * self.view.frame.width
-        let actualHorizontalDifferenceFromCenter = (self.view.frame.width/2) - (importantRegionCenterX)
-        self.view.center.x = centerPoint.x + actualHorizontalDifferenceFromCenter
+    func sizeProportionallyByHeight(height: CGFloat){
+        let height = height * 520/200
+        let sizeRatio = self.bounds.width/self.bounds.height
+        let previousCenter = self.center
         
-        let importantRegionCenterY = 123/433 * self.view.frame.height
-        let actualVerticalDifferenceFromCenter = (self.view.frame.height/2) - (importantRegionCenterY)
-        self.view.center.y = centerPoint.y + actualVerticalDifferenceFromCenter
-    }
-    
-    func sizeImportantRegionTo(newImportantRegionHeight: CGFloat){
-        let sizingFactor = newImportantRegionHeight/importantRegionHeight
-        self.view.frame.size = CGSize(width: self.view.frame.width * sizingFactor, height: self.view.frame.width * sizingFactor)
+        self.frame.size = CGSize(width: height * sizeRatio, height: height)
+        self.center = previousCenter
     }
 }
