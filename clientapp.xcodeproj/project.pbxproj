@@ -14,19 +14,17 @@
 		3109542D1EDB597700DF19C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3109542B1EDB597700DF19C8 /* LaunchScreen.storyboard */; };
 		310954371EDB5C3100DF19C8 /* CustomColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310954361EDB5C3100DF19C8 /* CustomColorScheme.swift */; };
 		3109543B1EDB6B2600DF19C8 /* IntroBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3109543A1EDB6B2600DF19C8 /* IntroBackground.swift */; };
+		310D380B1F006129007E84B3 /* SurveyCardIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D380A1F006129007E84B3 /* SurveyCardIndicator.swift */; };
+		310D380F1F006698007E84B3 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310D380E1F006698007E84B3 /* CustomTextField.swift */; };
 		311695651EE59EC500E696D5 /* IntroCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311695641EE59EC500E696D5 /* IntroCardButton.swift */; };
 		311695671EE6DD6F00E696D5 /* IntroImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311695661EE6DD6F00E696D5 /* IntroImage.swift */; };
-		3129C05D1EE7591100E0C52C /* SurveyScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129C05C1EE7591100E0C52C /* SurveyScreen1.swift */; };
-		3129C0601EE75CFB00E0C52C /* SurveyScreen1Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129C05F1EE75CFB00E0C52C /* SurveyScreen1Background.swift */; };
-		3129C0621EE75F0300E0C52C /* SurveyScreen1TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129C0611EE75F0300E0C52C /* SurveyScreen1TopBar.swift */; };
-		3129C0641EE815A000E0C52C /* SurveyScreen1ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129C0631EE815A000E0C52C /* SurveyScreen1ScrollView.swift */; };
 		3129C0661EE83DE000E0C52C /* SurveyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129C0651EE83DE000E0C52C /* SurveyCard.swift */; };
-		3129C0681EE8D7F800E0C52C /* SurveyCard1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129C0671EE8D7F800E0C52C /* SurveyCard1.swift */; };
 		3129C06A1EE8D8E700E0C52C /* UITextFieldElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129C0691EE8D8E700E0C52C /* UITextFieldElement.swift */; };
 		312AC74B1EE0776400F9C6BA /* UIGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312AC74A1EE0776400F9C6BA /* UIGroup.swift */; };
 		312EE7C21F003405002184E7 /* DisplayTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312EE7C11F003405002184E7 /* DisplayTester.swift */; };
-		312EE7C41F00484D002184E7 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312EE7C31F00484D002184E7 /* StudentInformation.swift */; };
+		312EE7C41F00484D002184E7 /* StudentInformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312EE7C31F00484D002184E7 /* StudentInformationController.swift */; };
 		31885ABF1EDD882200F8487B /* UIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31885ABE1EDD882200F8487B /* UIElement.swift */; };
+		31A880AB1F015E45006380AE /* GradeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A880AA1F015E45006380AE /* GradeButton.swift */; };
 		31D91B3C1EE4B30E00FF5C7D /* PixelColorIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D91B3B1EE4B30D00FF5C7D /* PixelColorIdentifier.swift */; };
 		31D91B3E1EE4B57900FF5C7D /* IntroCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D91B3D1EE4B57900FF5C7D /* IntroCard.swift */; };
 		31D91B411EE4B67E00FF5C7D /* IntroCardBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D91B401EE4B67E00FF5C7D /* IntroCardBackground.swift */; };
@@ -48,19 +46,17 @@
 		3109542E1EDB597700DF19C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		310954361EDB5C3100DF19C8 /* CustomColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomColorScheme.swift; path = "Custom Properties/CustomColorScheme.swift"; sourceTree = "<group>"; };
 		3109543A1EDB6B2600DF19C8 /* IntroBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroBackground.swift; sourceTree = "<group>"; };
+		310D380A1F006129007E84B3 /* SurveyCardIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyCardIndicator.swift; sourceTree = "<group>"; };
+		310D380E1F006698007E84B3 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		311695641EE59EC500E696D5 /* IntroCardButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroCardButton.swift; sourceTree = "<group>"; };
 		311695661EE6DD6F00E696D5 /* IntroImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroImage.swift; sourceTree = "<group>"; };
-		3129C05C1EE7591100E0C52C /* SurveyScreen1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyScreen1.swift; sourceTree = "<group>"; };
-		3129C05F1EE75CFB00E0C52C /* SurveyScreen1Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyScreen1Background.swift; sourceTree = "<group>"; };
-		3129C0611EE75F0300E0C52C /* SurveyScreen1TopBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyScreen1TopBar.swift; sourceTree = "<group>"; };
-		3129C0631EE815A000E0C52C /* SurveyScreen1ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyScreen1ScrollView.swift; sourceTree = "<group>"; };
 		3129C0651EE83DE000E0C52C /* SurveyCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyCard.swift; sourceTree = "<group>"; };
-		3129C0671EE8D7F800E0C52C /* SurveyCard1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyCard1.swift; sourceTree = "<group>"; };
 		3129C0691EE8D8E700E0C52C /* UITextFieldElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldElement.swift; sourceTree = "<group>"; };
 		312AC74A1EE0776400F9C6BA /* UIGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGroup.swift; sourceTree = "<group>"; };
 		312EE7C11F003405002184E7 /* DisplayTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayTester.swift; sourceTree = "<group>"; };
-		312EE7C31F00484D002184E7 /* StudentInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInformation.swift; sourceTree = "<group>"; };
+		312EE7C31F00484D002184E7 /* StudentInformationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInformationController.swift; sourceTree = "<group>"; };
 		31885ABE1EDD882200F8487B /* UIElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIElement.swift; sourceTree = "<group>"; };
+		31A880AA1F015E45006380AE /* GradeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeButton.swift; sourceTree = "<group>"; };
 		31D91B3B1EE4B30D00FF5C7D /* PixelColorIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelColorIdentifier.swift; sourceTree = "<group>"; };
 		31D91B3D1EE4B57900FF5C7D /* IntroCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroCard.swift; sourceTree = "<group>"; };
 		31D91B401EE4B67E00FF5C7D /* IntroCardBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroCardBackground.swift; sourceTree = "<group>"; };
@@ -138,36 +134,18 @@
 		311695681EE6EE3800E696D5 /* Survey Screens */ = {
 			isa = PBXGroup;
 			children = (
-				312EE7C31F00484D002184E7 /* StudentInformation.swift */,
-				311695691EE6EE4300E696D5 /* Student Information Screen */,
+				312EE7C31F00484D002184E7 /* StudentInformationController.swift */,
+				3129C0651EE83DE000E0C52C /* SurveyCard.swift */,
+				310D380A1F006129007E84B3 /* SurveyCardIndicator.swift */,
+				310D380E1F006698007E84B3 /* CustomTextField.swift */,
+				31A880AA1F015E45006380AE /* GradeButton.swift */,
 			);
 			name = "Survey Screens";
-			sourceTree = "<group>";
-		};
-		311695691EE6EE4300E696D5 /* Student Information Screen */ = {
-			isa = PBXGroup;
-			children = (
-				3129C05C1EE7591100E0C52C /* SurveyScreen1.swift */,
-				3129C05E1EE75CEE00E0C52C /* Components */,
-			);
-			name = "Student Information Screen";
-			sourceTree = "<group>";
-		};
-		3129C05E1EE75CEE00E0C52C /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				3129C05F1EE75CFB00E0C52C /* SurveyScreen1Background.swift */,
-				3129C0611EE75F0300E0C52C /* SurveyScreen1TopBar.swift */,
-				3129C0631EE815A000E0C52C /* SurveyScreen1ScrollView.swift */,
-				3129C0671EE8D7F800E0C52C /* SurveyCard1.swift */,
-			);
-			name = Components;
 			sourceTree = "<group>";
 		};
 		31885ABD1EDD880700F8487B /* CustomUIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				3129C0651EE83DE000E0C52C /* SurveyCard.swift */,
 				31885ABE1EDD882200F8487B /* UIElement.swift */,
 				312AC74A1EE0776400F9C6BA /* UIGroup.swift */,
 				31F024E71EDC867A00F85BBB /* SizingEngine.swift */,
@@ -293,18 +271,18 @@
 				31D91B4B1EE4BE4E00FF5C7D /* UILabelElement.swift in Sources */,
 				31F024E81EDC867A00F85BBB /* SizingEngine.swift in Sources */,
 				3129C06A1EE8D8E700E0C52C /* UITextFieldElement.swift in Sources */,
+				310D380F1F006698007E84B3 /* CustomTextField.swift in Sources */,
 				31885ABF1EDD882200F8487B /* UIElement.swift in Sources */,
 				311695671EE6DD6F00E696D5 /* IntroImage.swift in Sources */,
 				31D91B4F1EE4BFD700FF5C7D /* UIButtonElement.swift in Sources */,
 				3109543B1EDB6B2600DF19C8 /* IntroBackground.swift in Sources */,
-				3129C0641EE815A000E0C52C /* SurveyScreen1ScrollView.swift in Sources */,
-				3129C0601EE75CFB00E0C52C /* SurveyScreen1Background.swift in Sources */,
-				312EE7C41F00484D002184E7 /* StudentInformation.swift in Sources */,
+				312EE7C41F00484D002184E7 /* StudentInformationController.swift in Sources */,
 				310954371EDB5C3100DF19C8 /* CustomColorScheme.swift in Sources */,
+				31A880AB1F015E45006380AE /* GradeButton.swift in Sources */,
+				310D380B1F006129007E84B3 /* SurveyCardIndicator.swift in Sources */,
 				31D91B3E1EE4B57900FF5C7D /* IntroCard.swift in Sources */,
 				31D91B4D1EE4BF7D00FF5C7D /* IntroCardDescription.swift in Sources */,
 				312EE7C21F003405002184E7 /* DisplayTester.swift in Sources */,
-				3129C0621EE75F0300E0C52C /* SurveyScreen1TopBar.swift in Sources */,
 				31D91B431EE4B7C300FF5C7D /* IntroCardTitle.swift in Sources */,
 				310954231EDB597700DF19C8 /* AppDelegate.swift in Sources */,
 				312AC74B1EE0776400F9C6BA /* UIGroup.swift in Sources */,
@@ -312,8 +290,6 @@
 				3129C0661EE83DE000E0C52C /* SurveyCard.swift in Sources */,
 				311695651EE59EC500E696D5 /* IntroCardButton.swift in Sources */,
 				31D91B3C1EE4B30E00FF5C7D /* PixelColorIdentifier.swift in Sources */,
-				3129C0681EE8D7F800E0C52C /* SurveyCard1.swift in Sources */,
-				3129C05D1EE7591100E0C52C /* SurveyScreen1.swift in Sources */,
 				31D91B491EE4B91800FF5C7D /* UITextElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
