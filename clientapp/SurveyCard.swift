@@ -33,4 +33,13 @@ class SurveyCard: UIView{
         self.indicator.center = CGPoint(x: self.bounds.maxX - 20, y: 20)
         super.layoutSubviews()
     }
+    
+    public func contentsAreValid() -> Bool{
+        if indicator.status == .valid{
+            return true
+        }
+        else{
+            return false
+        }
+    }
 }

@@ -17,8 +17,6 @@ class IntroController: UIViewController {
     var cardExtension: UIView!
     
     override func viewDidLoad() {
-        self.button.setBackgroundImage(#imageLiteral(resourceName: "ButtonBackgroundHighlighted"), for: .highlighted)
-        
         cardExtension = UIView(frame: CGRect.init(x: 0, y: view.frame.maxY, width: view.bounds.width, height: self.view.bounds.height * 1.25))
         cardExtension.backgroundColor = card.backgroundColor
         view.addSubview(cardExtension)

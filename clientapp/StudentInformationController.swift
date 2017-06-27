@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class StudentInformationController: UIViewController, UITextFieldDelegate{
+class StudentInformationController: ViewControllerWithKeyboard, UITextFieldDelegate{
     
     @IBOutlet weak var topBar: UIImageView!
     @IBOutlet weak var contentView: UIView!
@@ -17,17 +17,11 @@ class StudentInformationController: UIViewController, UITextFieldDelegate{
     @IBOutlet var gradeButtons: [UIButton]!
     @IBOutlet var learningStyleButtons: [UIButton]!
     @IBOutlet var tutoringTypeButtons: [UIButton]!
-    
-    var controllerStage: ControllerStage = .loaded
-
-    enum ControllerStage{
-        case loaded, prepared, animated, finished
-    }
+    @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         view.isUserInteractionEnabled = true
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardResponder(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+        super.viewDidLoad()
     }
     
     override func viewDidLayoutSubviews(){
@@ -44,7 +38,7 @@ class StudentInformationController: UIViewController, UITextFieldDelegate{
         super.viewDidAppear(animated)
     }
     
-    func prepareToAnimateInSubviews(){
+    private func prepareToAnimateInSubviews(){
         for constraint in contentView.constraints {
             if constraint.identifier == "topbar-top" {
                 constraint.constant -= topBar.bounds.height
@@ -60,7 +54,7 @@ class StudentInformationController: UIViewController, UITextFieldDelegate{
         controllerStage = .prepared
     }
     
-    func animateInSubviews(){
+    private func animateInSubviews(){
         for constraint in scrollView.constraints{
             if constraint.identifier == "scrollcontentview-top" {
                 constraint.constant -= view.bounds.height
@@ -83,6 +77,33 @@ class StudentInformationController: UIViewController, UITextFieldDelegate{
         }, completion: nil)
         
         controllerStage = .animated
+    }
+    
+    private func animateOutSubviews(){
+        for constraint in contentView.constraints{
+            if constraint.identifier == "topbar-top"{
+                constraint.constant -= topBar.bounds.height
+            }
+        }
+        
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.2, options: [], animations: {
+            self.contentView.layoutIfNeeded()
+        }, completion: nil)
+        
+        for constraint in contentView.constraints{
+            if constraint.identifier == "topbar-bottom"{
+                constraint.constant += scrollView.frame.height
+            }
+        }
+        
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.4, options: [], animations: {
+            self.contentView.layoutIfNeeded()
+        }, completion: { (finished: Bool) in
+            let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SubjectSelection")
+            UIApplication.shared.delegate?.window??.rootViewController = nextVC
+        })
+        
+        controllerStage = .finished
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -146,6 +167,8 @@ class StudentInformationController: UIViewController, UITextFieldDelegate{
         default:
             print("Error - Invalid Textfield Tag Requested.")
         }
+        
+        verifySurveyContents()
     }
     
     @IBAction func screenIsTapped(_ sender: UITapGestureRecognizer) {
@@ -181,6 +204,7 @@ class StudentInformationController: UIViewController, UITextFieldDelegate{
                 button.isSelected = false
             }
         }
+        verifySurveyContents()
     }
     
     @IBAction func tutoringTypeButtonTapped(_ sender: UIButton) {
@@ -207,6 +231,7 @@ class StudentInformationController: UIViewController, UITextFieldDelegate{
                 button.isSelected = false
             }
         }
+        verifySurveyContents()
     }
     
     @IBAction func gradeButtonTapped(_ sender: UIButton) {
@@ -233,9 +258,30 @@ class StudentInformationController: UIViewController, UITextFieldDelegate{
                 button.isSelected = false
             }
         }
+        verifySurveyContents()
     }
     
-    func keyboardResponder(notification: Notification){
+    private func verifySurveyContents(){
+        var allContentsValid: Bool = true
+        for card in surveyCards{
+            if card.indicator.status != .valid{
+                allContentsValid = false
+                break
+            }
+        }
+        if allContentsValid == true{
+            nextButton.isEnabled = true
+        }
+        else{
+            nextButton.isEnabled = false
+        }
+    }
+    
+    @IBAction func nextButtonTapped(_ sender: UIButton) {
+        animateOutSubviews()
+    }
+    
+    override func keyboardDidMove(notification: Notification){
         if let userInfo = notification.userInfo{
             if let endFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue{
                 let duration: TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
@@ -257,7 +303,6 @@ class StudentInformationController: UIViewController, UITextFieldDelegate{
                             for card in surveyCards{
                                 if card.tag == textField.tag{
                                     scrollView.scrollRectToVisible(card.frame, animated: true)
-                                    print("yeboi")
                                     print(card.frame)
                                 }
                             }
@@ -271,5 +316,6 @@ class StudentInformationController: UIViewController, UITextFieldDelegate{
                 }, completion: nil)
             }
         }
+        super.keyboardDidMove(notification: notification)
     }
 }
