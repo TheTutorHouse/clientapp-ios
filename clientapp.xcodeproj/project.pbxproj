@@ -10,7 +10,6 @@
 		31074E751F01E56900A62B45 /* ViewControllerWithKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31074E741F01E56900A62B45 /* ViewControllerWithKeyboard.swift */; };
 		31074E781F01ECF100A62B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31074E771F01ECF100A62B45 /* Assets.xcassets */; };
 		31074E7C1F02910F00A62B45 /* SubjectSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31074E7B1F02910F00A62B45 /* SubjectSelectionController.swift */; };
-		31074E7F1F0298AE00A62B45 /* ConstraintHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31074E7E1F0298AE00A62B45 /* ConstraintHandler.swift */; };
 		31074E861F02A5E400A62B45 /* SubjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31074E851F02A5E400A62B45 /* SubjectCard.swift */; };
 		31074E881F02A7AD00A62B45 /* SubjectSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31074E871F02A7AD00A62B45 /* SubjectSearchController.swift */; };
 		310954231EDB597700DF19C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310954221EDB597700DF19C8 /* AppDelegate.swift */; };
@@ -24,6 +23,7 @@
 		3129C0661EE83DE000E0C52C /* SurveyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129C0651EE83DE000E0C52C /* SurveyCard.swift */; };
 		312EE7C21F003405002184E7 /* DisplayTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312EE7C11F003405002184E7 /* DisplayTester.swift */; };
 		312EE7C41F00484D002184E7 /* StudentInformationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312EE7C31F00484D002184E7 /* StudentInformationController.swift */; };
+		31857DFA1F0EE0060015DD11 /* ConstraintHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31857DF91F0EE0060015DD11 /* ConstraintHandler.swift */; };
 		31A880AB1F015E45006380AE /* GradeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A880AA1F015E45006380AE /* GradeButton.swift */; };
 		31D91B3C1EE4B30E00FF5C7D /* PixelColorIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D91B3B1EE4B30D00FF5C7D /* PixelColorIdentifier.swift */; };
 /* End PBXBuildFile section */
@@ -32,7 +32,6 @@
 		31074E741F01E56900A62B45 /* ViewControllerWithKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerWithKeyboard.swift; sourceTree = "<group>"; };
 		31074E771F01ECF100A62B45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31074E7B1F02910F00A62B45 /* SubjectSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectSelectionController.swift; sourceTree = "<group>"; };
-		31074E7E1F0298AE00A62B45 /* ConstraintHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintHandler.swift; sourceTree = "<group>"; };
 		31074E851F02A5E400A62B45 /* SubjectCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectCard.swift; sourceTree = "<group>"; };
 		31074E871F02A7AD00A62B45 /* SubjectSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectSearchController.swift; sourceTree = "<group>"; };
 		3109541F1EDB597700DF19C8 /* clientapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clientapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +47,7 @@
 		3129C0651EE83DE000E0C52C /* SurveyCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyCard.swift; sourceTree = "<group>"; };
 		312EE7C11F003405002184E7 /* DisplayTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayTester.swift; sourceTree = "<group>"; };
 		312EE7C31F00484D002184E7 /* StudentInformationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInformationController.swift; sourceTree = "<group>"; };
+		31857DF91F0EE0060015DD11 /* ConstraintHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintHandler.swift; sourceTree = "<group>"; };
 		31A880AA1F015E45006380AE /* GradeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeButton.swift; sourceTree = "<group>"; };
 		31D91B3B1EE4B30D00FF5C7D /* PixelColorIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelColorIdentifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,8 +180,8 @@
 		31F024E61EDC864A00F85BBB /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				31857DF91F0EE0060015DD11 /* ConstraintHandler.swift */,
 				312EE7C11F003405002184E7 /* DisplayTester.swift */,
-				31074E7E1F0298AE00A62B45 /* ConstraintHandler.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -264,11 +264,11 @@
 				31074E881F02A7AD00A62B45 /* SubjectSearchController.swift in Sources */,
 				311695671EE6DD6F00E696D5 /* IntroImage.swift in Sources */,
 				312EE7C41F00484D002184E7 /* StudentInformationController.swift in Sources */,
+				31857DFA1F0EE0060015DD11 /* ConstraintHandler.swift in Sources */,
 				310954371EDB5C3100DF19C8 /* CustomColorScheme.swift in Sources */,
 				31074E861F02A5E400A62B45 /* SubjectCard.swift in Sources */,
 				31A880AB1F015E45006380AE /* GradeButton.swift in Sources */,
 				310D380B1F006129007E84B3 /* SurveyCardIndicator.swift in Sources */,
-				31074E7F1F0298AE00A62B45 /* ConstraintHandler.swift in Sources */,
 				312EE7C21F003405002184E7 /* DisplayTester.swift in Sources */,
 				310954231EDB597700DF19C8 /* AppDelegate.swift in Sources */,
 				3129C0661EE83DE000E0C52C /* SurveyCard.swift in Sources */,
